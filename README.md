@@ -4,6 +4,7 @@ flappybird base game and NEAT AI
 ============Flappy bird AI============
 
 Contributors: notjamesw
+
 Version 1.0
 
 ==Description==
