@@ -2,10 +2,12 @@
 flappybird base game and NEAT AI
 
 ============Flappy bird AI============
+
 Contributors: notjamesw
 Version 1.0
 
 ==Description==
+
 When running the program three options will be given in the console. The console will prompt to run the AI training program or the pre-trained AI, or, you can try out the game for yourself. 
 
 The velocity the walls travel at increases by 1 every 10 walls passed. 
