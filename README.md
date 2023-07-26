@@ -5,7 +5,9 @@ flappybird base game and NEAT AI
 
 Contributors: notjamesw
 
-Version 1.0 (first complete version, includes a trained AI)
+Version 1.1 (fixed bug where new game starts at the same speed as old game)
+~~Version 1.0 (first complete version, includes a trained AI)~~
+
 
 ==Description==
 
