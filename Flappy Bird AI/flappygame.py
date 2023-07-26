@@ -12,7 +12,7 @@ import neat
 import random
 import time
 import os
-pygame.font.init()
+pygame.init()
 
 WIN_WIDTH = 600
 WIN_HEIGHT = 800
@@ -226,7 +226,6 @@ def draw_start(win):
 
 # function for the human/player option
 def human():  
-    birds = []
     bird = Bird(210,330)
     base = Base(680)
     walls = [Wall(600)]
@@ -234,6 +233,8 @@ def human():
     clock = pygame.time.Clock()
     score = 0
     run = draw_start(win)
+    Wall.vel = 5
+    Base.vel = 5
     speed_up = True
     
     while run:
@@ -270,7 +271,6 @@ def human():
         if base.collide(bird):
             run = False
 
-        birds.append(bird)
         draw_window(win, bird, walls, base, score)
         base.move()
 
@@ -461,6 +461,8 @@ def bot_r(genome, config):
     game_over(win, score)
 
 # main function
+# !!! todo: add additional feature for leaderboard (highest score) and
+# for pausing game and restarting game. 
 def start(): 
     #function loops while 1 is not entered in the console. 
     
@@ -528,11 +530,13 @@ def loadAI():
     bot_r(trained, config)
 
 #finds the config files for trainAI and loadAI. 
-if __name__ == "__main__":
-    local_dir = os.path.dirname(__file__)
-    config_path = os.path.join(local_dir, "config.txt")
-    config_path_trained = os.path.join(local_dir, "configTrained.txt")
+
+local_dir = os.path.realpath(os.path.join(os.getcwd(), 
+                                          os.path.dirname("flappygame.py")))
+config_path = os.path.join(local_dir, "config.txt")
+config_path_trained = os.path.join(local_dir, "configTrained.txt")
 
 # begins the main program. 
 start()
+pygame.quit()
 
