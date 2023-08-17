@@ -5,10 +5,11 @@ flappybird base game and NEAT AI
 
 Contributors: notjamesw
 
-Version 1.1 (fixed bug where new game starts at the same speed as old game)
+Version 1.2 (file searching method adjusted to allow for .exe file)
+
+~~Version 1.1 (fixed bug where new game starts at the same speed as old game)~~
 
 ~~Version 1.0 (first complete version, includes a trained AI)~~
-
 
 ==Description==
 
@@ -24,5 +25,7 @@ The text files contains the necessary configurations for the NEAT algorithm to w
 
 Controls: Press space or left click to flap wings. 
 
+==Additional Information==
 
+You can find the folder for the game, including an executable file here: https://drive.google.com/drive/folders/1BNxzUsBayTIriDVbUN2tykWc9HHQVmtJ?usp=sharing.
 
